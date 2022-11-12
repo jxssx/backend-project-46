@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import genDiffJSON from '../src/difference.js';
 import * as fs from 'fs';
 import path from 'path';
 import { Command } from 'commander';
+import genDiffJSON from '../src/difference.js';
 
 const program = new Command();
 
@@ -24,7 +24,5 @@ program
     console.log(difference);
     console.log('}');
   });
-
-
 
 program.parse();

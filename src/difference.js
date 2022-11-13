@@ -1,7 +1,8 @@
 import _ from 'lodash';
 
 const genDiffJSON = (file1, file2) => {
-  const data = _.uniq(_.sortBy(_.union(_.keys(file1), _.keys(file2))));
+  const unitedKeys = _.union(_.keys(file1), _.keys(file2));
+  const data = _.uniq(_.sortBy(unitedKeys));
   const result = data.map((key) => {
     const value1 = file1[key];
     const value2 = file2[key];

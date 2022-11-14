@@ -1,6 +1,8 @@
 name: check
 
-on: push
+on: 
+  push
+    branches: [ master ]
 
 env:
   CI: true
@@ -30,4 +32,3 @@ jobs:
         C_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         coverageCommand: make test_coverage
-        

@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import diff from '../index.js';
-import { formatPaths, readFile } from '../src/tools.js';
+import { readFile } from '../src/tools.js';
 
 test('diff', () => {
   const actual = diff('__fixtures__/file1.json', '__fixtures__/file2.json');

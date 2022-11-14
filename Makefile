@@ -3,6 +3,7 @@ lint:
 dependency:
 	npm ci
 test:
-	NODE_OPTIONS=--experimental-vm-modules npx jest
-
+	npm test
+test_coverage:
+	npm test -s -- --coverage --coverageProvider=v8
 

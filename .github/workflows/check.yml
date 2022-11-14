@@ -1,7 +1,7 @@
 name: check
 
 on: 
-  push
+  push:
     branches: [ master ]
 
 env:

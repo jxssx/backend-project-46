@@ -7,5 +7,8 @@
 ### Codeclimate test coverage:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f74c787dff6413bff020/test_coverage)](https://codeclimate.com/github/jxssx/backend-project-46/test_coverage)
 
-### Float JSON demo:
+### Float JSON files demo:
 [![asciicast](https://asciinema.org/a/537655.svg)](https://asciinema.org/a/537655)
+
+### Float YAML files demo:
+[![asciicast](https://asciinema.org/a/537776.svg)](https://asciinema.org/a/537776)

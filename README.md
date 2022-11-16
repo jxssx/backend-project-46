@@ -12,3 +12,6 @@
 
 ### Flat YAML files demo:
 [![asciicast](https://asciinema.org/a/537776.svg)](https://asciinema.org/a/537776)
+
+### Nested JSON/YAML files demo:
+[![asciicast](https://asciinema.org/a/538042.svg)](https://asciinema.org/a/538042)

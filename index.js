@@ -1,6 +1,6 @@
 import parse from './src/parsers.js';
 import { readFile, getExt } from './src/tools.js';
-import format from './src/formatters/format.js';
+import format from './src/formatters/index.js';
 import genDiff from './src/difference.js';
 
 const diff = (filepath1, filepath2, outputFormat) => {

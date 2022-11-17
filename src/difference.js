@@ -12,14 +12,16 @@ const genDiff = (file1, file2) => {
       if (_.isObject(value1) && _.isObject(value2)) {
         return { key, children: genDiff(value1, value2), type: 'nested' };
       }
-      return [{ key, value: value1, type: 'deleted' }, { key, value: value2, type: 'added' }];
+      return {
+        key, removed: { value: value1, type: 'removed' }, added: { value: value2, type: 'added' }, type: 'changed',
+      };
     }
     if (_.has(file1, key)) {
-      return { key, value: value1, type: 'deleted' };
+      return { key, value: value1, type: 'removed' };
     }
     return { key, value: value2, type: 'added' };
   });
-  return result.flat();
+  return result;
 };
 
 export default genDiff;

@@ -13,7 +13,7 @@ const genDiff = (file1, file2) => {
         return { key, children: genDiff(value1, value2), type: 'nested' };
       }
       return {
-        key, removed: { value: value1, type: 'removed' }, added: { value: value2, type: 'added' }, type: 'changed',
+        key, removed: { value: value1, type: 'removed' }, added: { value: value2, type: 'added' }, type: 'updated',
       };
     }
     if (_.has(file1, key)) {

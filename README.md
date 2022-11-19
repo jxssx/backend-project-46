@@ -18,3 +18,6 @@
 
 ### Nested JSON/YAML files demo in plain format:
 [![asciicast](https://asciinema.org/a/538806.svg)](https://asciinema.org/a/538806)
+
+### Nested JSON/YAML files demo in JSON format:
+[![asciicast](https://asciinema.org/a/538810.svg)](https://asciinema.org/a/538810)

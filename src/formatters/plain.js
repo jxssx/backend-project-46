@@ -1,6 +1,14 @@
 import _ from 'lodash';
 
-const simplify = (value) => (_.isObject(value) ? '[complex value]' : `'${value}'`);
+const simplify = (value) => {
+  if (_.isObject(value)) {
+    return '[complex value]';
+  }
+  if (typeof value === 'string') {
+    return `'${value}'`;
+  }
+  return value;
+};
 
 const formatNestedKeys = (parent) => parent.children.flatMap((child) => {
   const childCopy = _.cloneDeep(child);

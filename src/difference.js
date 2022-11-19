@@ -7,19 +7,19 @@ const genDiff = (file1, file2) => {
     const value2 = file2[key];
     if (_.has(file1, key) && _.has(file2, key)) {
       if (value1 === value2) {
-        return { key, value: value1, type: 'unchanged' };
+        return { type: 'unchanged', key, value: value1 };
       }
       if (_.isObject(value1) && _.isObject(value2)) {
-        return { key, children: genDiff(value1, value2), type: 'nested' };
+        return { type: 'nested', key, children: genDiff(value1, value2) };
       }
       return {
-        key, removed: { value: value1, type: 'removed' }, added: { value: value2, type: 'added' }, type: 'updated',
+        type: 'updated', key, removed: { type: 'removed', value: value1 }, added: { type: 'added', value: value2 },
       };
     }
     if (_.has(file1, key)) {
-      return { key, value: value1, type: 'removed' };
+      return { type: 'removed', key, value: value1 };
     }
-    return { key, value: value2, type: 'added' };
+    return { type: 'added', key, value: value2 };
   });
   return result;
 };

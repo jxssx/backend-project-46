@@ -11,8 +11,8 @@ const simplify = (value) => {
 };
 
 const formatNestedKeys = (parent) => parent.children.flatMap((child) => {
-  const childCopy = _.cloneDeep(child);
-  childCopy.key = `${parent.key}.${child.key}`;
+  const keyName = `${parent.key}.${child.key}`;
+  const childCopy = { ...child, key: `${keyName}` };
   if (child.type === 'nested') {
     return formatNestedKeys(childCopy);
   }

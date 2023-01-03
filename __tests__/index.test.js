@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import diff from '../index.js';
+import diff from '../src/index.js';
 import { readFile } from '../src/tools.js';
 
 test('diff', () => {

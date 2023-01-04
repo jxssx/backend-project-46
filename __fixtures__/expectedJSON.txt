@@ -21,14 +21,8 @@
       {
         "type": "updated",
         "key": "setting3",
-        "removed": {
-          "type": "removed",
-          "value": true
-        },
-        "added": {
-          "type": "added",
-          "value": null
-        }
+        "removed": true,
+        "added": null
       },
       {
         "type": "added",
@@ -53,14 +47,8 @@
               {
                 "type": "updated",
                 "key": "wow",
-                "removed": {
-                  "type": "removed",
-                  "value": "wow"
-                },
-                "added": {
-                  "type": "added",
-                  "value": "so much"
-                }
+                "removed": "wow",
+                "added": "so much"
               }
             ]
           },
@@ -85,14 +73,8 @@
       {
         "type": "updated",
         "key": "baz",
-        "removed": {
-          "type": "removed",
-          "value": "bas"
-        },
-        "added": {
-          "type": "added",
-          "value": "bars"
-        }
+        "removed": "bas",
+        "added": "bars"
       },
       {
         "type": "unchanged",
@@ -103,15 +85,9 @@
         "type": "updated",
         "key": "nest",
         "removed": {
-          "type": "removed",
-          "value": {
-            "key": "value"
-          }
+          "key": "value"
         },
-        "added": {
-          "type": "added",
-          "value": "str"
-        }
+        "added": "str"
       }
     ]
   },

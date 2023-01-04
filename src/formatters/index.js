@@ -9,7 +9,6 @@ export default (data, format) => {
       return formatStylish(data);
     case 'plain':
       return formatPlain(data);
-    case 'JSON':
     case 'json':
       return formatJSON(data);
     default: throw new Error(`Unexpected output format "${format}"`);

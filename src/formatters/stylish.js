@@ -32,10 +32,10 @@ const formatStylish = (tree) => {
     const keyIndent = indent.repeat(indentSize - prefixOffset);
     const bracketIndent = indent.repeat(indentSize - keyOffset);
     const formattedData = data.flatMap((elem) => {
-      if (elem.type !== 'nested' && elem.type !== 'updated') {
+      if (elem.type !== 'nested' && elem.type !== 'changed') {
         return form(elem.key, toStr(elem.value, depth + 1), elem.type, keyIndent);
       }
-      if (elem.type === 'updated') {
+      if (elem.type === 'changed') {
         return [form(elem.key, toStr(elem.removed, depth + 1), 'removed', keyIndent),
           form(elem.key, toStr(elem.added, depth + 1), 'added', keyIndent)];
       }

@@ -26,8 +26,8 @@ const formatPlain = (data) => {
         return `Property '${elem.key}' was removed`;
       case 'added':
         return `Property '${elem.key}' was added with value: ${simplify(elem.value)}`;
-      case 'updated':
-        return `Property '${elem.key}' was updated. From ${simplify(elem.removed)} to ${simplify(elem.added)}`;
+      case 'changed':
+        return `Property '${elem.key}' was changed. From ${simplify(elem.removed)} to ${simplify(elem.added)}`;
       case 'unchanged':
         return [];
       case 'nested':

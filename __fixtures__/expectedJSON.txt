@@ -19,7 +19,7 @@
         "value": 200
       },
       {
-        "type": "updated",
+        "type": "changed",
         "key": "setting3",
         "removed": true,
         "added": null
@@ -45,7 +45,7 @@
             "key": "doge",
             "children": [
               {
-                "type": "updated",
+                "type": "changed",
                 "key": "wow",
                 "removed": "wow",
                 "added": "so much"
@@ -71,7 +71,7 @@
     "key": "group1",
     "children": [
       {
-        "type": "updated",
+        "type": "changed",
         "key": "baz",
         "removed": "bas",
         "added": "bars"
@@ -82,7 +82,7 @@
         "value": "bar"
       },
       {
-        "type": "updated",
+        "type": "changed",
         "key": "nest",
         "removed": {
           "key": "value"

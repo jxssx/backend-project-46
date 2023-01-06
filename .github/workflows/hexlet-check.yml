@@ -9,7 +9,7 @@
 name: hexlet-check
 
 on:
-  [push, workflow_dispatch]
+  push
 
 jobs:
   build:

@@ -9,7 +9,11 @@
 name: hexlet-check
 
 on:
-  push
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
 
 jobs:
   build:

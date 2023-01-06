@@ -9,14 +9,7 @@
 name: hexlet-check
 
 on:
-  push:
-    branches:
-      - '**'
-    tags:
-      - '**'
-  
-on: 
-  workflow-dispatch
+  [push, workflow_dispatch]
 
 jobs:
   build:

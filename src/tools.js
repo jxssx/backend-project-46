@@ -1,5 +1,3 @@
-/* eslint-disable fp/no-rest-parameters */
-
 import path from 'path';
 import * as fs from 'fs';
 import { fileURLToPath } from 'url';
@@ -16,9 +14,4 @@ export const readTestFile = (...filepaths) => {
   return fs.readFileSync(pathToFile, 'utf8');
 };
 
-export const readFile = (testing = false, ...filepaths) => {
-  if (!testing) {
-    return fs.readFileSync(formatPaths(...filepaths), 'utf8');
-  }
-  return readTestFile(...filepaths);
-};
+export const readFile = (...filepaths) => fs.readFileSync(formatPaths(...filepaths), 'utf8');

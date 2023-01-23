@@ -1,4 +1,5 @@
 /* eslint-disable fp/no-rest-parameters */
+// без этого коммента не проходят тесты от хекслета, потому что там видимо свой кфг линтера
 
 import path from 'path';
 import * as fs from 'fs';
